@@ -1,0 +1,2032 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+    <title>HTML Email Template Boilerplate</title>
+    <style type="text/css">
+      @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+      table {
+        border-spacing: 0;
+      }
+
+      td {
+        padding: 0;
+      }
+
+      p {
+        font-size: 15px;
+      }
+
+      img {
+        border: 0;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .three-col-img {
+        width: 200px;
+        max-width: 200px;
+      }
+
+      .two-col-img {
+        width: 300px;
+        max-width: 300px;
+      }
+
+      .two-columns .link {
+        width: 260px;
+        max-width: 260px;
+      }
+
+      @media screen and (max-width: 599.98px) {
+        .header .padding {
+          padding: 10px 0px 0px 0px !important;
+        }
+
+        .two-columns .column .padding {
+          padding: 0px !important;
+          padding-bottom: 10px !important;
+        }
+
+        .two-columns .column {
+          width: 100% !important;
+        }
+
+        .two-columns .column .content .col-img {
+          text-align: right !important;
+        }
+
+        .two-columns .column .content .col-text p a {
+          text-align: left !important;
+        }
+
+        .two-columns .column .content .col-text p a {
+          text-align: right !important;
+        }
+
+        .two-columns .link {
+          width: 100% !important;
+          max-width: 100% !important;
+          padding: 20px 0px !important;
+        }
+
+        .follow-us p {
+          text-align: center !important;
+        }
+
+        .social .padding {
+          text-align: center !important;
+        }
+
+        .col-two {
+          width: 50% !important;
+        }
+
+        .two-columns .column {
+          margin-bottom: 20px !important;
+        }
+
+        .two-columns .column {
+          padding: 0 !important;
+        }
+      }
+      @media only screen and (max-width: 399.98px) {
+        .header .padding {
+          padding: 10px 0px 0px 0px !important;
+        }
+
+        .two-columns .column {
+          width: 100% !important;
+        }
+
+        .two-columns .link {
+          width: 100% !important;
+          max-width: 100% !important;
+          margin-left: 0px !important;
+          padding: 20px 0px !important;
+          font-size: 16px !important;
+        }
+
+        .two-columns .column .content .col-img {
+          text-align: right !important;
+        }
+
+        .two-columns .column .content .col-text p a {
+          text-align: left !important;
+        }
+
+        .two-columns .content {
+          width: 600px !important;
+        }
+
+        .two-columns .column {
+          margin-bottom: 20px !important;
+        }
+
+        .two-columns .column {
+          padding: 0 !important;
+        }
+
+        .follow-us p {
+          text-align: center !important;
+        }
+
+        .social .padding {
+          text-align: center !important;
+        }
+
+        .col-two {
+          width: 50% !important;
+          text-align: right;
+        }
+
+        .col-two a {
+          text-align: left !important;
+        }
+
+        .footer .content p a {
+          font-size: 10px !important;
+        }
+        .footer .content p {
+          font-size: 10px !important;
+        }
+
+        .p-0 {
+          padding: 0px !important;
+        }
+      }
+
+      /* Custom Dark Mode Colors */
+
+      @media (prefers-color-scheme: dark) {
+        .sub-header .column p {
+          color: #383633 !important;
+        }
+      }
+    </style>
+
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        table{border-collapse: collapse; !important}
+      </style>
+    <![endif]-->
+  </head>
+  <body
+    style="margin: 0; padding: 0; min-width: 100%; background-color: #dde0e1"
+  >
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        body {
+          background-color: #dde0e1 !important;
+        }
+        body,
+        table,
+        td,
+        p,
+        a {
+          font-family: sans-serif, Arial, Helvitica !important;
+        }
+      </style>
+    <![endif]-->
+
+    <!-- Start of HTML EMAIL -->
+    <center style="width: 100%; table-layout: fixed; background-color: #dde0e1">
+      <div
+        style="
+          max-width: 600px;
+          background-color: #fafdfe;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        "
+      >
+        <!-- Preheader (remove) -->
+        <div
+          style="
+            font-size: 0px;
+            color: #fafdfe;
+            line-height: 1px;
+            mso-line-height-rule: exactly;
+            display: none;
+            max-width: 0px;
+            max-height: 0px;
+            opacity: 0;
+            overflow: hidden;
+            mso-hide: all;
+          "
+        >
+          This is our preheader text! SALE SALE 25% OFF!
+          <!-- Add Preheader Text (85-100 character) -->
+        </div>
+        <!-- End Preheader (remove) -->
+
+        <!--[if (gte mso 9)|(IE)]>
+         <table width="600" align="center" style="border-spacing: 0; color:#565656" role="presentation">
+            <tr>
+               <td style="padding: 0;">
+    <![endif]-->
+
+        <!-- Start of container -->
+        <table
+          align="center"
+          style="
+            border-spacing: 0;
+            color: #565656;
+            font-family: sans-serif, Arial, Helvitica !important;
+            background-color: #fafdfe;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            max-width: 600px;
+          "
+          role="presentation"
+        >
+          <!--Start of one-col header -->
+          <tr>
+            <td style="padding: 0px 0 0px 0">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    class="header"
+                    style="padding: 0; font-size: 0; text-align: center"
+                  >
+                    <!--[if (gte mso 9)|(IE)]>
+                                  <table width="100%" style="border-spacing: 0;" role="presentation">
+                                  <tr>
+                                  <td width="600" valign="top" style="padding: 0;">
+                               <![endif]-->
+
+                    <table
+                      class="one-column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        max-width: 600px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 20px 0px 0px 0px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: center"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <a href="http://example.com">
+                                  <img
+                                    class="header-img"
+                                    style="width: 200px; max-width: 100%"
+                                    src="https://i.postimg.cc/sgsxwJ5P/party-city-logo.png"
+                                    alt="header-img"
+                                  />
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                          </td>
+                        </tr>
+                      </table>
+                        <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of one col   -->
+
+          <!-- Start of navbar -->
+          <tr>
+            <td class="padding" style="padding: 20px 20px 20px 20px">
+              <table
+                class="content"
+                style="border-spacing: 0; width: 540px; max-width: 100%"
+                role="presentation"
+              >
+                <tr>
+                  <td style="text-align: center">
+                    <a
+                      href="https://example.com"
+                      target="_blank"
+                      style="
+                        padding: 0px 5px 0px 7px;
+                        color: #020202;
+                        font-size: 14px;
+                        text-decoration: none;
+                        border-right: 1px solid #020202;
+                      "
+                    >
+                      Birthday
+                    </a>
+                    <a
+                      href="https://example.com"
+                      target="_blank"
+                      style="
+                        padding: 0px 5px 0px 7px;
+                        color: #020202;
+                        font-size: 14px;
+                        text-decoration: none;
+                        border-right: 1px solid #020202;
+                      "
+                    >
+                      Ballons
+                    </a>
+                    <a
+                      href="https://example.com"
+                      target="_blank"
+                      style="
+                        padding: 0px 5px 0px 7px;
+                        color: #020202;
+                        font-size: 14px;
+                        text-decoration: none;
+                        border-right: 1px solid #020202;
+                      "
+                    >
+                      Holiday
+                    </a>
+                    <a
+                      href="https://example.com"
+                      target="_blank"
+                      style="
+                        padding: 0px 5px 0px 7px;
+                        color: #020202;
+                        font-size: 14px;
+                        text-decoration: none;
+                      "
+                    >
+                      Find A Store
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- End of navbar -->
+
+          <!--Start of one-col hero -->
+          <tr>
+            <td style="padding: 0px 0 0px 0">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td style="padding: 0; font-size: 0">
+                    <!--[if (gte mso 9)|(IE)]>
+                              <table width="100%" style="border-spacing: 0;" role="presentation">
+                              <tr>
+                              <td width="600" valign="top" style="padding: 0;">
+                           <![endif]-->
+
+                    <table
+                      class="one-column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        max-width: 600px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 0px 0px 0px 0px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <img
+                                  class="one-col-img"
+                                  style="width: 600px; max-width: 100%"
+                                  src="https://i.postimg.cc/K80GQhGF/party-city-hero.jpg"
+                                  alt="party-city-hero"
+                                />
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                      </td>
+                    </tr>
+                  </table>
+                    <![endif]-->
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 0; font-size: 0; background: #f5f5f5">
+                    <!--[if (gte mso 9)|(IE)]>
+                                <table width="100%" style="border-spacing: 0;" role="presentation">
+                                <tr>
+                                <td width="600" valign="top" style="padding: 0;">
+                             <![endif]-->
+
+                    <table
+                      class="one-column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        max-width: 600px;
+
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 0px 0px 0px 0px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; width: 600px"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <p
+                                  style="
+                                    text-align: center;
+                                    padding-bottom: 20px;
+                                  "
+                                >
+                                  Gear up for the fall season with these
+                                  incredible prices.
+                                </p>
+                                <p
+                                  style="
+                                    text-align: center;
+                                    padding-bottom: 20px;
+                                  "
+                                >
+                                  <a
+                                    style="
+                                      color: #ffffff;
+                                      font-size: 17px;
+                                      font-weight: bold;
+                                      line-height: 1;
+                                      padding: 14px 30px;
+                                      text-decoration: none;
+                                      text-transform: uppercase;
+                                      background: #bb0100;
+                                    "
+                                    href="http://example.com"
+                                  >
+                                    Shop Now
+                                  </a>
+                                </p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                        </td>
+                      </tr>
+                    </table>
+                      <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of one col hero   -->
+
+          <!--Start of one-col -->
+          <tr>
+            <td style="padding: 0px 0 0px 0">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td style="padding: 0; font-size: 0">
+                    <!--[if (gte mso 9)|(IE)]>
+                              <table width="100%" style="border-spacing: 0;" role="presentation">
+                              <tr>
+                              <td width="600" valign="top" style="padding: 0;">
+                           <![endif]-->
+
+                    <table
+                      class="one-column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        max-width: 600px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 0px 0px 0px 0px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <img
+                                  class="one-col-img"
+                                  style="width: 600px; max-width: 100%"
+                                  src="https://s5.gifyu.com/images/party-city-free-delivery.gif"
+                                  alt="party-city-free-delivery"
+                                />
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                      </td>
+                    </tr>
+                  </table>
+                    <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of one col   -->
+
+          <!--Start of one-col -->
+          <tr>
+            <td style="padding: 0px 0 0px 0">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td style="padding: 0; font-size: 0">
+                    <!--[if (gte mso 9)|(IE)]>
+                                  <table width="100%" style="border-spacing: 0;" role="presentation">
+                                  <tr>
+                                  <td width="600" valign="top" style="padding: 0;">
+                               <![endif]-->
+
+                    <table
+                      class="one-column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        max-width: 600px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 40px 0px 0px 0px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; width: 600px"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <h3
+                                  style="
+                                    color: #000000;
+                                    font-size: 24px;
+                                    font-weight: bold;
+                                    text-align: center;
+                                  "
+                                >
+                                  Unbe-leaf-able Fall Values
+                                </h3>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                          </td>
+                        </tr>
+                      </table>
+                        <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of one col   -->
+
+          <!--Start of one-col -->
+          <tr>
+            <td style="padding: 0px 0 0px 0">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td style="padding: 0; font-size: 0">
+                    <!--[if (gte mso 9)|(IE)]>
+                                      <table width="100%" style="border-spacing: 0;" role="presentation">
+                                      <tr>
+                                      <td width="600" valign="top" style="padding: 0;">
+                                   <![endif]-->
+
+                    <table
+                      class="one-column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        max-width: 600px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 40px 0px 40px 0px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <img
+                                  class="one-col-img"
+                                  style="width: 600px; max-width: 100%"
+                                  src="https://i.postimg.cc/kXFX6tL2/party-city-straw-bale.jpg"
+                                  alt="product-3"
+                                />
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                              </td>
+                            </tr>
+                          </table>
+                            <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of one col   -->
+
+          <!--Start of one-col -->
+          <tr>
+            <td style="padding: 0px 0 0px 0">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td style="padding: 0; font-size: 0">
+                    <!--[if (gte mso 9)|(IE)]>
+                                      <table width="100%" style="border-spacing: 0;" role="presentation">
+                                      <tr>
+                                      <td width="600" valign="top" style="padding: 0;">
+                                   <![endif]-->
+
+                    <table
+                      class="one-column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        max-width: 600px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 40px 0px 40px 0px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <img
+                                  class="one-col-img"
+                                  style="width: 600px; max-width: 100%"
+                                  src="https://s5.gifyu.com/images/party-city-yard-stakes.gif"
+                                  alt="product-4"
+                                />
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                              </td>
+                            </tr>
+                          </table>
+                            <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of one col   -->
+
+          <!--Start of one-col -->
+          <tr>
+            <td style="padding: 0px 0 0px 0">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td style="padding: 0; font-size: 0">
+                    <!--[if (gte mso 9)|(IE)]>
+                                      <table width="100%" style="border-spacing: 0;" role="presentation">
+                                      <tr>
+                                      <td width="600" valign="top" style="padding: 0;">
+                                   <![endif]-->
+
+                    <table
+                      class="one-column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        max-width: 600px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 40px 0px 40px 0px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <img
+                                  class="one-col-img"
+                                  style="width: 600px; max-width: 100%"
+                                  src="https://i.postimg.cc/cLx1QLNX/party-city-fall-ballons.jpg"
+                                  alt="party-city-fall-ballons"
+                                  title="party-city-fall-ballons"
+                                />
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                              </td>
+                            </tr>
+                          </table>
+                            <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of one col   -->
+
+          <!--Start of one-col -->
+          <tr>
+            <td style="padding: 0px 0 0px 0">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td style="padding: 0; font-size: 0">
+                    <!--[if (gte mso 9)|(IE)]>
+                                              <table width="100%" style="border-spacing: 0;" role="presentation">
+                                              <tr>
+                                              <td width="600" valign="top" style="padding: 0;">
+                                           <![endif]-->
+
+                    <table
+                      class="one-column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        max-width: 600px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 40px 0px 40px 0px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; border: 8px solid #003069"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <img
+                                  class="one-col-img"
+                                  style="width: 600px; max-width: 100%"
+                                  src="https://i.postimg.cc/fLGTX7w9/party-city-shop-online.jpg"
+                                  alt="party-city-free-shipping"
+                                />
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                    <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of one col   -->
+
+          <!--Start of one-col -->
+          <tr>
+            <td style="padding: 0px 0 0px 0">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td style="padding: 0; font-size: 0">
+                    <!--[if (gte mso 9)|(IE)]>
+                                          <table width="100%" style="border-spacing: 0;" role="presentation">
+                                          <tr>
+                                          <td width="600" valign="top" style="padding: 0;">
+                                       <![endif]-->
+
+                    <table
+                      class="one-column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        max-width: 600px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 40px 0px 40px 0px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <img
+                                  class="one-col-img"
+                                  style="width: 600px; max-width: 100%"
+                                  src="https://i.postimg.cc/c4qr8WHb/party-city-free-shipping.jpg"
+                                  alt="party-city-free-shipping"
+                                />
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                                  </td>
+                                </tr>
+                              </table>
+                                <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of one col   -->
+
+          <!-- start of two col -->
+          <tr>
+            <td style="padding: 0px">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    class="two-columns p-0"
+                    style="
+                      padding: 0px 0px 40px 0px;
+                      font-size: 0;
+                      text-align: center;
+                    "
+                  >
+                    <!--[if (gte mso 9)|(IE)]>
+                           <table width="100%" style="border-spacing: 0;" role="presentation">
+                           <tr>
+                           <td width="50%" valign="top" style="padding: 0;">
+                        <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 50%;
+                        display: inline-block;
+                        background: #f5f5f5;
+                        padding-right: 10px;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding">
+                          <table
+                            class="content"
+                            style="border-spacing: 0"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td
+                                align="left"
+                                class="col-img"
+                                style="
+                                  padding: 10px;
+                                  width: 50%;
+                                  background: #f5f5f5;
+                                "
+                              >
+                                <img
+                                  src="https://i.postimg.cc/R00FzVsN/party-city-phone.png"
+                                  alt="party-city-phone"
+                                  width="100px"
+                                />
+                              </td>
+                              <td style="width: 50%" class="col-text">
+                                <p>
+                                  <a
+                                    style="
+                                      color: #000;
+                                      text-align: center;
+                                      text-decoration: none;
+                                      display: block;
+                                      font-size: 18px;
+                                    "
+                                    href="http://example.com"
+                                  >
+                                    <span style="font-weight: bold">
+                                      DOWNLOAD
+                                      <br />
+                                    </span>
+                                    Party City App
+                                  </a>
+                                </p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                        </td><td width="50%" valign="top" style="padding: 0;">
+                        <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 50%;
+                        display: inline-block;
+                        padding-left: 10px;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; height: 176px"
+                            role="presentation"
+                          >
+                            <tr style="vertical-align: middle">
+                              <td class="col-two" style="background: #f5f5f5">
+                                <img
+                                  class="col-img"
+                                  src="https://i.postimg.cc/GmK2NsjW/party-city-message.png"
+                                  alt="party-city-phone"
+                                  width="100px"
+                                />
+                              </td>
+                              <td class="col-two" style="background: #f5f5f5">
+                                <p>
+                                  <a
+                                    style="
+                                      color: #000;
+                                      text-align: center;
+                                      text-decoration: none;
+                                      display: block;
+                                      font-size: 18px;
+                                    "
+                                    href="http://example.com"
+                                  >
+                                    <span style="font-weight: bold">
+                                      Text
+                                      <span style="color: #36a7db">JOINPC</span>
+                                      to 94467
+                                    </span>
+                                    <br />
+                                    for exclusive savings straight to your phone
+                                  </a>
+                                </p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                           </td>
+                           </tr>
+                           </table>
+                        <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- end of two col -->
+
+          <!--Start of one-col  -->
+          <tr>
+            <td style="padding: 0px 0 0px 0">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    class="header"
+                    style="padding: 0; font-size: 0; text-align: center"
+                  >
+                    <!--[if (gte mso 9)|(IE)]>
+                                      <table width="100%" style="border-spacing: 0;" role="presentation">
+                                      <tr>
+                                      <td width="600" valign="top" style="padding: 0;">
+                                   <![endif]-->
+
+                    <table
+                      class="one-column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        max-width: 600px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding">
+                          <table
+                            class="content"
+                            style="
+                              border-spacing: 0;
+                              text-align: center;
+                              width: 600px;
+                            "
+                            role="presentation"
+                          >
+                            <tr>
+                              <td
+                                height="2"
+                                style="background-color: #666"
+                              ></td>
+                            </tr>
+
+                            <tr>
+                              <td>
+                                <h3
+                                  style="
+                                    color: #666666;
+                                    font-size: 20px;
+                                    line-height: 1.3;
+                                    font-weight: bold;
+                                    margin-bottom: 0px;
+                                    padding: 40px 0px;
+                                  "
+                                >
+                                  MAKE YOUR CELEBRATION UNFORGETTABLE!
+                                </h3>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                              </td>
+                            </tr>
+                          </table>
+                            <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of one col   -->
+
+          <!-- start of two col -->
+          <tr>
+            <td style="padding: 0px">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    class="two-columns"
+                    style="padding: 0; font-size: 0; text-align: center"
+                  >
+                    <!--[if (gte mso 9)|(IE)]>
+                               <table width="100%" style="border-spacing: 0;" role="presentation">
+                               <tr>
+                               <td width="50%" valign="top" style="padding: 0;">
+                            <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 50%;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding">
+                          <table
+                            class="content"
+                            style="border-spacing: 0"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td align="center">
+                                <a
+                                  class="link"
+                                  style="
+                                    background-color: #666666;
+                                    border: 2px solid #666666;
+                                    color: #ffffff;
+                                    font-size: 17px;
+                                    line-height: 1;
+                                    padding: 15px;
+                                    text-decoration: none;
+                                    display: block;
+                                  "
+                                  href="https://example.com"
+                                  target="_blank"
+                                >
+                                  TABLEWARE AND SERVING
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                            </td><td width="50%" valign="top" style="padding: 0;">
+                            <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 50%;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding">
+                          <table
+                            class="content"
+                            style="border-spacing: 0"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td align="center">
+                                <a
+                                  class="link"
+                                  style="
+                                    background-color: #666666;
+                                    border: 2px solid #666666;
+                                    color: #ffffff;
+                                    font-size: 17px;
+                                    line-height: 1;
+                                    padding: 15px;
+                                    text-decoration: none;
+                                    display: block;
+                                    margin-left: 6px;
+                                  "
+                                  href="https://example.com"
+                                  target="_blank"
+                                >
+                                  BIRTHDAY PARTY SUPPLIES
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                               </td>
+                               </tr>
+                               </table>
+                            <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- end of two col -->
+
+          <!-- start of two col -->
+          <tr>
+            <td style="padding: 0px">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    class="two-columns"
+                    style="padding: 0; font-size: 0; text-align: center"
+                  >
+                    <!--[if (gte mso 9)|(IE)]>
+                                   <table width="100%" style="border-spacing: 0;" role="presentation">
+                                   <tr>
+                                   <td width="50%" valign="top" style="padding: 0;">
+                                <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 50%;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 10px 0px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td align="center">
+                                <a
+                                  class="link"
+                                  style="
+                                    background-color: #666666;
+                                    border: 2px solid #666666;
+                                    color: #ffffff;
+                                    font-size: 17px;
+                                    line-height: 1;
+                                    padding: 15px;
+                                    text-decoration: none;
+                                    display: block;
+                                  "
+                                  href="https://example.com"
+                                  target="_blank"
+                                >
+                                  COSTUMES
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                                </td><td width="50%" valign="top" style="padding: 0;">
+                                <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 50%;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 10px 0px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td align="center">
+                                <a
+                                  class="link"
+                                  style="
+                                    background-color: #666666;
+                                    border: 2px solid #666666;
+                                    color: #ffffff;
+                                    font-size: 17px;
+                                    line-height: 1;
+                                    padding: 15px;
+                                    text-decoration: none;
+                                    display: block;
+                                    margin-left: 6px;
+                                  "
+                                  href="https://example.com"
+                                  target="_blank"
+                                >
+                                  HOLIDAYS
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                                   </td>
+                                   </tr>
+                                   </table>
+                                <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- end of two col -->
+
+          <!-- start of two col -->
+          <tr>
+            <td style="padding: 0px">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    class="two-columns"
+                    style="padding: 0; font-size: 0; text-align: center"
+                  >
+                    <!--[if (gte mso 9)|(IE)]>
+                                   <table width="100%" style="border-spacing: 0;" role="presentation">
+                                   <tr>
+                                   <td width="50%" valign="top" style="padding: 0;">
+                                <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 50%;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding">
+                          <table
+                            class="content"
+                            style="border-spacing: 0"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td align="center">
+                                <a
+                                  class="link"
+                                  style="
+                                    background-color: #666666;
+                                    border: 2px solid #666666;
+                                    color: #ffffff;
+                                    font-size: 17px;
+                                    line-height: 1;
+                                    padding: 15px;
+                                    text-decoration: none;
+                                    display: block;
+                                  "
+                                  href="https://example.com"
+                                  target="_blank"
+                                >
+                                  SPORTS THEME PARTY
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                                </td><td width="50%" valign="top" style="padding: 0;">
+                                <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 50%;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding">
+                          <table
+                            class="content"
+                            style="border-spacing: 0"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td align="center">
+                                <a
+                                  class="link"
+                                  style="
+                                    background-color: #666666;
+                                    border: 2px solid #666666;
+                                    color: #ffffff;
+                                    font-size: 17px;
+                                    line-height: 1;
+                                    padding: 15px;
+                                    text-decoration: none;
+                                    display: block;
+                                    margin-left: 6px;
+                                  "
+                                  href="https://example.com"
+                                  target="_blank"
+                                >
+                                  BALLOONS
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                                   </td>
+                                   </tr>
+                                   </table>
+                                <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- end of two col -->
+
+          <!-- start of two col -->
+          <tr>
+            <td style="padding: 0px">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    class="two-columns"
+                    style="padding: 0; font-size: 0; text-align: center"
+                  >
+                    <!--[if (gte mso 9)|(IE)]>
+                                       <table width="100%" style="border-spacing: 0;" role="presentation">
+                                       <tr>
+                                       <td width="50%" valign="top" style="padding: 0;">
+                                    <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 50%;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 10px 0px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td align="center">
+                                <a
+                                  class="link"
+                                  style="
+                                    background-color: #666666;
+                                    border: 2px solid #666666;
+                                    color: #ffffff;
+                                    font-size: 17px;
+                                    line-height: 1;
+                                    padding: 15px;
+                                    text-decoration: none;
+                                    display: block;
+                                  "
+                                  href="https://example.com"
+                                  target="_blank"
+                                >
+                                  CANDY
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                                    </td><td width="50%" valign="top" style="padding: 0;">
+                                    <![endif]-->
+
+                    <table
+                      class="column"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 50%;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 10px 0px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td align="center">
+                                <a
+                                  class="link"
+                                  style="
+                                    background-color: #666666;
+                                    border: 2px solid #666666;
+                                    color: #ffffff;
+                                    font-size: 17px;
+                                    line-height: 1;
+                                    padding: 15px;
+                                    text-decoration: none;
+                                    display: block;
+                                    margin-left: 6px;
+                                  "
+                                  href="https://example.com"
+                                  target="_blank"
+                                >
+                                  PARTY FAVORS
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                                       </td>
+                                       </tr>
+                                       </table>
+                                    <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- end of two col -->
+
+          <!--Start of one-col  -->
+          <tr>
+            <td style="padding: 0px 0 0px 0">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td style="padding: 0; font-size: 0">
+                    <!--[if (gte mso 9)|(IE)]>
+                                          <table width="100%" style="border-spacing: 0;" role="presentation">
+                                          <tr>
+                                          <td width="600" valign="top" style="padding: 0;">
+                                       <![endif]-->
+
+                    <table
+                      class="one-column follow-us"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        max-width: 600px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 20px 20px 0px 20px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; width: 540px"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td>
+                                <p
+                                  style="
+                                    color: #000000;
+                                    font-size: 21px;
+                                    line-height: 24px;
+                                  "
+                                >
+                                  <span
+                                    style="font-weight: bold; font-size: 24px"
+                                  >
+                                    Follow Us
+                                  </span>
+                                  <br />
+                                  #PartyCity
+                                </p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                                  </td>
+                                </tr>
+                              </table>
+                                <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of one col   -->
+
+          <!--Start of one-col -->
+          <tr>
+            <td style="padding: 0px 0 0px 0">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td style="padding: 0; font-size: 0">
+                    <!--[if (gte mso 9)|(IE)]>
+                                          <table width="100%" style="border-spacing: 0;" role="presentation">
+                                          <tr>
+                                          <td width="600" valign="top" style="padding: 0;">
+                                       <![endif]-->
+
+                    <table
+                      class="one-column social"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        max-width: 600px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 0px 0px 0px 0px">
+                          <table
+                            class="content"
+                            style="
+                              border-spacing: 0;
+                              width: 600px;
+                              max-width: 100%;
+                            "
+                            role="presentation"
+                          >
+                            <tr>
+                              <td style="padding: 0">
+                                <table
+                                  width="100%"
+                                  style="border-spacing: 0"
+                                  role="presentation"
+                                >
+                                  <tr>
+                                    <td style="padding: 0px 20px 8px 20px">
+                                      <a
+                                        style="padding: 0px 10px 0px 0px"
+                                        href="https://example.com"
+                                        target="_blank"
+                                      >
+                                        <img
+                                          src="https://i.postimg.cc/vHWDrKxH/party-city-instagram.png"
+                                          width="40px"
+                                          border="0"
+                                          title="instagram"
+                                          alt="instagram"
+                                        />
+                                      </a>
+                                      <a
+                                        style="padding: 0px 10px 0px 0px"
+                                        href="https://example.com"
+                                        target="_blank"
+                                      >
+                                        <img
+                                          src="https://i.postimg.cc/MZfnTHWB/party-city-facebook.png"
+                                          width="40px"
+                                          border="0"
+                                          title="facebook"
+                                          alt="facebook"
+                                        />
+                                      </a>
+                                      <a
+                                        style="padding: 0px 10px 0px 0px"
+                                        href="https://example.com"
+                                        target="_blank"
+                                      >
+                                        <img
+                                          src="https://i.postimg.cc/VLckkFZy/party-city-twitter.png"
+                                          width="40px"
+                                          border="0"
+                                          title="twitter"
+                                          alt="twitter"
+                                        />
+                                      </a>
+                                      <a
+                                        style="padding: 0px 10px 0px 0px"
+                                        href="https://example.com"
+                                        target="_blank"
+                                      >
+                                        <img
+                                          src="https://i.postimg.cc/k5h5M3zw/party-city-pinterest.png"
+                                          width="40px"
+                                          border="0"
+                                          title="pinterest"
+                                          alt="pinterest"
+                                        />
+                                      </a>
+                                      <a
+                                        style="padding: 0px 10px 0px 0px"
+                                        href="https://example.com"
+                                        target="_blank"
+                                      >
+                                        <img
+                                          src="https://i.postimg.cc/MZBGwLDb/party-city-youtube.png"
+                                          width="40px"
+                                          border="0"
+                                          title="youtube"
+                                          alt="youtube"
+                                        />
+                                      </a>
+                                      <a
+                                        style="padding: 0px 10px 0px 0px"
+                                        href="https://example.com"
+                                        target="_blank"
+                                      >
+                                        <img
+                                          src="https://i.postimg.cc/nrqV1szw/party-city-tiktok.png"
+                                          width="40px"
+                                          border="0"
+                                          title="tiktok"
+                                          alt="tiktok"
+                                        />
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                                  </td>
+                                </tr>
+                              </table>
+                                <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of one col   -->
+
+          <!--Start of one-col  -->
+          <tr>
+            <td style="padding: 0px 0 0px 0">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td style="padding: 0; font-size: 0">
+                    <!--[if (gte mso 9)|(IE)]>
+                                          <table width="100%" style="border-spacing: 0;" role="presentation">
+                                          <tr>
+                                          <td width="600" valign="top" style="padding: 0;">
+                                       <![endif]-->
+
+                    <table
+                      class="one-column footer"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        max-width: 600px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td class="padding" style="padding: 20px 0px 20px 0px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; width: 600px"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td
+                                height="5"
+                                style="background-color: #636494"
+                              ></td>
+                            </tr>
+
+                            <tr>
+                              <td>
+                                <p
+                                  style="
+                                    color: #999999;
+                                    font-size: 10px;
+                                    line-height: 14px;
+                                    padding: 0px 20px;
+                                  "
+                                >
+                                  To ensure our emails get to you, please add
+                                  party@us.partycity.com to your safe senders
+                                  list.
+                                </p>
+
+                                <p
+                                  style="
+                                    color: #999999;
+                                    font-size: 10px;
+                                    line-height: 14px;
+                                    padding: 0px 20px;
+                                  "
+                                >
+                                  Standard text message and data charges apply.
+                                  For the terms and conditions of our text
+                                  message program, visit Terms & Privacy. Texts
+                                  may be sent using an automatic telephone
+                                  dialing system. Consent not required for any
+                                  purchase from Party City. Message frequency is
+                                  recurring. Not all mobile carriers are
+                                  supported. To opt out, Text STOP to 94467. For
+                                  help, text HELP to 94467.
+                                </p>
+
+                                <p
+                                  style="
+                                    color: #999999;
+                                    font-size: 10px;
+                                    line-height: 14px;
+                                    padding: 0px 20px;
+                                  "
+                                >
+                                  LIMITED TIME ONLY. Valid coupon code must be
+                                  entered at checkout to receive discount.
+                                  Merchandise subtotal is used to calculate
+                                  discount offer threshold for online promo
+                                  codes. Discount offer threshold must be met
+                                  before the discount is applied. Discount
+                                  applies to merchandise only and does not apply
+                                  to shipping, fees, taxes, or other
+                                  non-merchandise charges. Sale, clearance,
+                                  was/now, promotional items and personalized
+                                  favor setup fees do not count towards the
+                                  discount offer threshold. Buy online pickup
+                                  in-store, curbside and delivery items count
+                                  towards the promotional discount however not
+                                  the shipping threshold promotion. The minimum
+                                  merchandise total calculated per delivery
+                                  method must be met for shipping promotions is
+                                  calculated after any discount coupons have
+                                  been applied and does not include shipping,
+                                  handling, taxes or duty charges. Purchase must
+                                  exceed minimum required spend before tax.
+                                  Offer not valid on Helium Tanks or Pre-orders.
+                                  Offer may not be combined with other coupon
+                                  codes. Not valid for prior purchases. Shipping
+                                  offers are not valid for over-sized, hazardous
+                                  items, Alaska/Hawaii or military address
+                                  deliveries. No cash or credit back. We reserve
+                                  the right to cancel any order due to
+                                  unauthorized, altered, or ineligible use of
+                                  discount. All promotional dates & times are
+                                  subject to change without notice. Only one
+                                  coupon or promotional code permitted per order
+                                  and customer. Pricing, participation,
+                                  selection and availability may vary by store
+                                  or online. Free Shipping offer valid through
+                                  09/30/2022.
+                                </p>
+
+                                <p
+                                  style="
+                                    color: #999999;
+                                    font-size: 10px;
+                                    line-height: 14px;
+                                    padding: 0px 20px;
+                                  "
+                                >
+                                  Actual retail prices in your area may be
+                                  substantially different. All prices are
+                                  subject to change without notice. While Party
+                                  City strives to provide accurate pricing
+                                  information, pricing or typographical errors
+                                  may occur. Party City reserves the right to
+                                  correct any errors, inaccuracies or omissions
+                                  and to change or update information related to
+                                  pricing and availability at any time without
+                                  notice. Party City cannot confirm the price of
+                                  an item until after you order. In the event
+                                  that an item is listed at an incorrect price
+                                  due to an error in pricing, Party City shall
+                                  have the right, at Party City's sole
+                                  discretion, to refuse or cancel any orders
+                                  placed with that item. In the event that an
+                                  item is mispriced, Party City may, at Party
+                                  City's discretion, either contact you for
+                                  instructions or cancel your order and notify
+                                  you of such cancellation. Product selection,
+                                  availability and pricing participation may
+                                  vary by store or online. Valid in US stores
+                                  and online only.
+                                </p>
+
+                                <p
+                                  style="
+                                    color: #999999;
+                                    font-size: 10px;
+                                    line-height: 14px;
+                                    padding: 0px 20px;
+                                  "
+                                >
+                                  By providing your email you have agreed to
+                                  receive promotional communication from Party
+                                  City. If you do not want to receive
+                                  promotional communication please unsubscribe
+                                  from future messages or write to us at Party
+                                  City Customer Service:
+                                </p>
+
+                                <p
+                                  style="
+                                    color: #999999;
+                                    font-size: 10px;
+                                    line-height: 14px;
+                                    padding: 0px 20px;
+                                  "
+                                >
+                                  Party City Holdings, Inc. | 25 Green Pond Rd.
+                                  | Rockaway, NJ 07866 | US
+                                  <br />
+                                  Or contact our Customer Service Department via
+                                  email.
+                                </p>
+
+                                <p>
+                                  <a
+                                    style="
+                                      color: #222;
+                                      font-size: 10px;
+                                      line-height: 14px;
+                                      padding: 0px 20px;
+                                    "
+                                    href="http://example.com"
+                                  >
+                                    www.partycity.com
+                                  </a>
+                                </p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                                  </td>
+                                </tr>
+                              </table>
+                                <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!--End of one col   -->
+        </table>
+        <!-- End of container -->
+
+        <!--[if (gte mso 9)|(IE)]>
+        </td>
+      </tr>
+   </table>
+         <![endif]-->
+      </div>
+      <!-- End of HTML EMAIL -->
+    </center>
+  </body>
+</html>
